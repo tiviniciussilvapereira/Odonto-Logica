@@ -28,11 +28,9 @@ html, body{
 header{
     padding: 20px 2%;
 }
-header .logo .img{
-    width: 260px;
-    height: 50px;
+header .logo img{
+    width: 280px;
     float: left;
-    background-color: #cccccc;
 }
 
 header nav.mobile-menu{
@@ -71,31 +69,36 @@ header nav.desktop-menu{
 }
 
 header nav.desktop-menu ul{
-    padding: 8px;
+    padding: 20px;
     list-style-type: none;
 }
 
 header nav.desktop-menu ul li{
     float: left;
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 16px;
     padding: 0 20px;
 }
 
 header nav.desktop-menu ul li a{
-    color: #b4b4b4b4;
+    color: #555c6eb4;
     text-decoration: none;
 }
 
-@media screen and (max-width: 860px){
+@media screen and (max-width: 880px){
     nav.desktop-menu{
         display: none;
     }
     header nav.mobile-menu{
         display: block;
         float: right;
+        margin-top: 5px;
+        
     }
-    
+    header .logo img{
+        width: 180px;
+        float: left;
+    }
 }
 /***FIM HEADER***/
 
@@ -111,7 +114,13 @@ header nav.desktop-menu ul li a{
     padding-top: 100%;
     background-color: #b4b4b4b4;
     border: 5px solid white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+
+
 /***FIM SECTION-MOSAICO***/
 
 /***SECTION-SERVICOS***/
@@ -140,8 +149,8 @@ section.section-servicos > .container .box-servicos p{
 
 section.section-servicos > .container .box-servicos{
     background-image: url(../imagens/tooth.png);
-    background-size: 25px 25px;
-    background-position: center calc(100% - 6px);
+    background-size: 23px 23px;
+    background-position: center calc(100% - 8px);
     background-repeat: no-repeat;
 }
 
@@ -156,7 +165,8 @@ section.section-servicos > .container .box-servicos:nth-of-type(2){
     width: 60%;
     padding: 60px 2%;
     background-color: #688293;
-    background-image: none;
+    background-size: 30px 30px;
+    background-position: center calc(100% - 12px);
 }
 
 section.section-servicos > .container .box-servicos:nth-of-type(3){
@@ -165,7 +175,7 @@ section.section-servicos > .container .box-servicos:nth-of-type(3){
     background-color: #576975;
 }
 
-@media screen and (max-width: 860px){
+@media screen and (max-width: 880px){
     section.section-servicos > .container{
         flex-direction: column;
     }
@@ -229,6 +239,7 @@ section.section-perfil .texto-perfil{
 section.section-perfil .texto-perfil h2{
     color: #576975;
     font-size: 18px;
+    text-transform: uppercase;
 }
 
 section.section-perfil .texto-perfil p{
@@ -237,7 +248,7 @@ section.section-perfil .texto-perfil p{
     padding-top: 10px;
 }
 
-@media screen and (max-width: 860px){
+@media screen and (max-width: 880px){
     section.section-perfil .wraper-perfil{
         padding-top: 0;
     }
@@ -281,7 +292,16 @@ section.section-videos .box-video iframe{
     height: 100%;
 }
 
-@media screen and (max-width: 860px){
+section.section-videos h2{
+    color: #576975;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 20px;
+}
+
+@media screen and (max-width: 880px){
     section.section-videos{
         text-align: center;
     }
@@ -292,6 +312,9 @@ section.section-videos .box-video iframe{
         position: relative;
         float: none;
     }    
+    section.section-videos h2{
+        font-size: 15px;
+    }
 }
 /***FIM SECTION-VIDEOS***/
 
@@ -381,7 +404,7 @@ section.depoimentos .nome-depoimento{
     width: 100%;
     text-align: center;
     padding: 40px;
-    background-color: #a3bac9 ;
+    background-color: #a3bac9;
 }
 
 .instagram-social p{
@@ -402,6 +425,9 @@ section.depoimentos .nome-depoimento{
     padding-top: calc(100% / 9);
     background-color: #232627;
     border: 5px solid white;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .facebook-social{
@@ -409,7 +435,7 @@ section.depoimentos .nome-depoimento{
     width: 100%;
     text-align: center;
     padding: 40px;
-    background-color: #7d91a0 ;
+    background-color: #a3bac9;
 }
 
 .facebook-social p{
@@ -441,7 +467,7 @@ section.depoimentos .nome-depoimento{
 }
 /***FIM SECTION-SOCIAL***/
 
-/***SECTION-FORMULARIO***/
+/***SECTION-CONTATO***/
 section.contato{
     padding: 60px 2%;
 }
@@ -483,6 +509,7 @@ section.contato form{
     line-height: 35px;
     padding-left: 10px;
     border: 1px solid #dadada;
+    outline: 0;
 }
 
 .form-wraper textarea{
@@ -491,5 +518,104 @@ section.contato form{
     padding: 9px 10px;
     resize: none;
     border: 1px solid #dadada;
+    outline: 0;
 }
-/***FIM SECTION-FORMULARIO***/
+
+.form-wraper-submit{
+    text-align: center;
+}
+.form-wraper-submit input[type=submit]{
+    width: 100px;
+    height: 40px;
+    background-color: #576975;
+    color: white;
+    border: 0;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 10px;
+    outline: 0;
+    /*
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    */
+}
+
+@media screen and (max-width: 640px){
+    .w50{
+        width: 100%;
+    }
+}
+/***FIM SECTION-CONTATO***/
+
+/***SECTION-ADENDOS***/
+section.adendos{
+    background-color: #a3bac9;
+    padding: 60px;
+}
+
+section.adendos > .container{
+    max-width: 1000px;
+}
+
+section.adendos .dados-wrapper{
+    float: left;
+    text-align: center;
+    width: 33.3%;
+    color: white;
+}
+
+.dados-wrapper h2{
+    font-weight: normal;
+    font-size: 18px;
+}
+.dados-wrapper p{
+    font-size: 15px;
+    padding-top: 5px;
+}
+
+@media screen and (max-width: 640px){
+    section.adendos .dados-wrapper{
+        width: 100%;
+        padding-top: 20px;
+    }  
+}
+/***FIM-SECTION-ADENDOS***/
+
+/***FOOTER***/
+
+footer{
+    background-color: #232627;
+    padding: 20px;
+}
+
+footer p:nth-of-type(1){
+    float: left;
+    color: white;
+    font-size: 15px;
+}
+
+footer p:nth-of-type(2){
+    float: right;
+    color: white;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 640px){
+    footer{
+        text-align: center;
+    }
+    
+    footer p:nth-of-type(1){
+        float: none;
+        width: 100%;
+    }
+    
+    footer p:nth-of-type(2){
+        float:none; 
+        width: 100%;
+        margin-top: 8px;
+    }
+}
+/***FIM-FOOTER***/
