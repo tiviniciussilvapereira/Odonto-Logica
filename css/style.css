@@ -529,6 +529,12 @@ section.depoimentos .nome-depoimento{
     .slick-prev::after{
         display: none;
     }
+    .mosaico-social{
+        padding-bottom: 0;
+    }
+    .social{
+        background-color: white;
+    }
 }
 
 /******************/
