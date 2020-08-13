@@ -4,8 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="imagens/icone.ico" type="image-x/png" rel="shortcut icon">
+    <link href="css/slick.css" rel="stylesheet">
+    <link href="css/slick-theme.css">
     <link href="css/style.css" rel="stylesheet">
-    <title>Projeto 4</title>
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/slides.js"></script>
+    <script src="js/script.js"></script>
+    <title>ODONTO.LÓGICA</title>
 </head>
 <body>
     <header>
@@ -15,19 +22,19 @@
             </div> 
             <nav class="desktop-menu">
                 <ul>
-                    <li><a href="">quem somos</a></li>
-                    <li><a href="">depoimentos</a></li>
-                    <li><a href="">sobre</a></li>
-                    <li><a href="">contato</a></li>
+                    <li><a href="#quem-somos">quem somos</a></li>
+                    <li><a href="#tratamentos">tratamentos</a></li>
+                    <li><a href="#depoimentos">depoimentos</a></li>
+                    <li><a href="#contato">contato</a></li>
                 </ul>
             </nav><!--desktop-menu-->
 
             <nav class="mobile-menu">
                 <ul>
-                    <li><a href="">quem somos</a></li>
-                    <li><a href="">depoimentos</a></li>
-                    <li><a href="">sobre</a></li>
-                    <li><a href="">contato</a></li>
+                    <li><a href="#quem-somos">quem somos</a></li>
+                    <li><a href="#tratamentos">tratamentos</a></li>
+                    <li><a href="#depoimentos">depoimentos</a></li>
+                    <li><a href="#contato">contato</a></li>
                 </ul>
             </nav><!--mobile-menu-->
 
@@ -40,36 +47,37 @@
             <div class="wraper-mosaico">
                 <div class="single-mosaico">
                     <div style="background-image: url('imagens/mosaico1.jpeg');" class="img-mosaico" ></div>
+                    <div style="background-image: url('imagens/mosaico7.jpg');" class="img-mosaico" ></div>
+                </div><!--single-mosaico-->
+
+                <div class="single-mosaico">
+                    <div style="background-image: url('imagens/mosaico8.jpg');" class="img-mosaico" ></div>
                     <div style="background-image: url('imagens/mosaico2.jpg');" class="img-mosaico" ></div>
                 </div><!--single-mosaico-->
 
                 <div class="single-mosaico">
                     <div style="background-image: url('imagens/mosaico3.jpg');" class="img-mosaico" ></div>
+                    <div style="background-image: url('imagens/mosaico9.jpeg');" class="img-mosaico" ></div>
+                </div><!--single-mosaico-->
+
+                <div class="single-mosaico">
+                    <div style="background-image: url('imagens/mosaico10.jpg');" class="img-mosaico" ></div>
                     <div style="background-image: url('imagens/mosaico4.jpg');" class="img-mosaico" ></div>
                 </div><!--single-mosaico-->
 
                 <div class="single-mosaico">
                     <div style="background-image: url('imagens/mosaico5.jpg');" class="img-mosaico" ></div>
-                    <div style="background-image: url('imagens/mosaico6.jpg');" class="img-mosaico" ></div>
-                </div><!--single-mosaico-->
-
-                <div class="single-mosaico">
-                    <div style="background-image: url('imagens/mosaico7.jpg');" class="img-mosaico" ></div>
-                    <div style="background-image: url('imagens/mosaico8.jpg');" class="img-mosaico" ></div>
-                </div><!--single-mosaico-->
-
-                <div class="single-mosaico">
-                    <div style="background-image: url('imagens/mosaico9.jpeg');" class="img-mosaico" ></div>
-                    <div style="background-image: url('imagens/mosaico10.jpg');" class="img-mosaico" ></div>
-                </div><!--single-mosaico-->
-
-                <div class="single-mosaico">
                     <div style="background-image: url('imagens/mosaico11.jpg');" class="img-mosaico" ></div>
+                </div><!--single-mosaico-->
+
+                <div class="single-mosaico">
                     <div style="background-image: url('imagens/mosaico12.jpg');" class="img-mosaico" ></div>
+                    <div style="background-image: url('imagens/mosaico6.jpg');" class="img-mosaico" ></div>
                 </div><!--single-mosaico-->
             </div><!--wraper-mosaico-->
         </div><!--container-->
     </section><!--section-mosaico-->
+    
 
     <section class="section-servicos">
         <div class="container">
@@ -91,7 +99,7 @@
         </div><!--container-->
     </section><!--section-servicos-->
 
-    <section class="section-perfil">
+    <section id="quem-somos" class="section-perfil">
         <div class="container">
             <div class="wraper-perfil">
                 <div class="wraper-perfil-2">
@@ -107,7 +115,7 @@
         </div><!--container-->
     </section><!--section-perfil-->
 
-    <section class="section-videos">
+    <section id="videos" class="section-videos">
         <div class="container">
             <h2> confira nossos videos sobre saúde dental no youtube!</h2>
             <div class="box-video">
@@ -125,54 +133,86 @@
         </div><!--container-->
     </section><!--section-videos-->
 
-    <section class="tratamentos">
+    <section id="tratamentos" class="tratamentos">
         <h2>Tratamentos</h2>
         <div class="container">
             <div class="tratamento-container">
-                <div class="tratamento-single">
-                    <h3>Lorem Ipsum</h3>
-                    <p>Quisque non leo laoreet, imperdiet mauris </p>
+                <div class="tratamento-single" style="background-image: url(../imagens/tooth1.png); background-size: 30px 30px; background-repeat: no-repeat; background-position: 50% 5%;"> 
+                    <h3>Limpeza completa</h3>
+                    <p>Remoção de placas, tartaro e limpeza de gengivas.</p>
                 </div><!--tratamento-single-->
-                <div class="tratamento-single">
-                    <h3>Lorem Ipsum</h3>
-                    <p>Quisque non leo laoreet, imperdiet mauris </p>
+
+                <div class="tratamento-single" style="background-image: url(../imagens/tooth2.png); background-size: 30px 30px; background-repeat: no-repeat; background-position: 50% 5%;"> 
+                    <h3>Alinhamento Dental</h3>
+                    <p>Alinhamento da estrutura dental.</p>
                 </div><!--tratamento-single-->
-                <div class="tratamento-single">
-                    <h3>Lorem Ipsum</h3>
-                    <p>Quisque non leo laoreet, imperdiet mauris </p>
+
+                <div class="tratamento-single" style="background-image: url(../imagens/tooth3.png); background-size: 30px 30px; background-repeat: no-repeat; background-position: 50% 5%;"> 
+                    <h3>Reforma e restauração dental</h3>
+                    <p>Restauração etética dos dentes.</p>
                 </div><!--tratamento-single-->
-                <div class="tratamento-single">
-                    <h3>Lorem Ipsum</h3>
-                    <p>Quisque non leo laoreet, imperdiet mauris </p>
+            </div><!--tratamento-container-->
+
+            
+            <div class="tratamento-container">
+                <div class="tratamento-single" style="background-image: url(../imagens/tooth4.png); background-size: 30px 30px; background-repeat: no-repeat; background-position: 50% 5%;"> 
+                    <h3>Procedimentos cirurgicos</h3>
+                    <p>Cirurgias e procedimentos.</p>
                 </div><!--tratamento-single-->
-                <div class="tratamento-single">
-                    <h3>Lorem Ipsum</h3>
-                    <p>Quisque non leo laoreet, imperdiet mauris </p>
+
+                <div class="tratamento-single" style="background-image: url(../imagens/tooth5.png); background-size: 30px 30px; background-repeat: no-repeat; background-position: 50% 5%;"> 
+                    <h3>Clareamento Dental</h3>
+                    <p>Clareamento para renovar o sorriso.</p>
                 </div><!--tratamento-single-->
-                <div class="tratamento-single">
-                    <h3>Lorem Ipsum</h3>
-                    <p>Quisque non leo laoreet, imperdiet mauris </p>
+
+                <div class="tratamento-single" style="background-image: url(../imagens/tooth6.png); background-size: 30px 30px; background-repeat: no-repeat; background-position: 50% 5%;"> 
+                    <h3>Tratamento da Sensibilidade</h3>
+                    <p>Acabe com a sensibilidade dos seus denters.</p>
                 </div><!--tratamento-single-->
-                <div class="tratamento-single">
-                    <h3>Lorem Ipsum</h3>
-                    <p>Quisque non leo laoreet, imperdiet mauris </p>
+            </div><!--tratamento-container-->
+
+
+            <div class="tratamento-container">
+                <div class="tratamento-single" style="background-image: url(../imagens/tooth7.png); background-size: 30px 30px; background-repeat: no-repeat; background-position: 50% 5%;"> 
+                    <h3>Aplicação de fluor</h3>
+                    <p>Aplicação de fluor infantil.</p>
                 </div><!--tratamento-single-->
-                <div class="tratamento-single">
-                    <h3>Lorem Ipsum</h3>
-                    <p>Quisque non leo laoreet, imperdiet mauris </p>
+
+                <div class="tratamento-single" style="background-image: url(../imagens/tooth8.png); background-size: 30px 30px; background-repeat: no-repeat; background-position: 50% 5%;"> 
+                    <h3>Diagnostico gratuito</h3>
+                    <p>Sem custos!</p>
                 </div><!--tratamento-single-->
-                <div class="tratamento-single">
-                    <h3>Lorem Ipsum</h3>
-                    <p>Quisque non leo laoreet, imperdiet mauris </p>
+
+                <div class="tratamento-single" style="background-image: url(../imagens/tooth9.png); background-size: 30px 30px; background-repeat: no-repeat; background-position: 50% 5%;"> 
+                    <h3>Plástica Dental</h3>
+                    <p>Invista na estitica dos seus dentes</p>
                 </div><!--tratamento-single-->
             </div><!--tratamento-container-->
         </div><!--container-->
         <div class="clear"></div>
     </section><!--section-tratamentos-->
 
-    <section class="depoimentos">
+    <section id="depoimentos" class="depoimentos">
         <h2>Depoimentos</h2>
         <div class="container">
+            <div class="depoimento-single">
+                <quote>
+                    "Recomendo o consultório odontológico, estrutura excelente e ótimo atendimento!"
+                </quote>
+                <div class="nome-depoimento">
+                    <img width="40px" height="40px" src="imagens/person.png"> 
+                    <span>Fulana da Silva</span>
+                </div>
+            </div><!--depoimentos-single-->
+            <div class="depoimento-single">
+                <quote>
+                    "Recomendo o consultório odontológico, estrutura excelente e ótimo atendimento!"
+                </quote>
+                <div class="nome-depoimento">
+                    <img width="40px" height="40px" src="imagens/person.png"> 
+                    <span>Fulana da Silva</span>
+                </div>
+            </div><!--depoimentos-single-->
             <div class="depoimento-single">
                 <quote>
                     "Recomendo o consultório odontológico, estrutura excelente e ótimo atendimento!"
@@ -185,34 +225,57 @@
         </div><!--container-->
     </section><!--section-depoimentos-->
 
-    <section class="social">
+    <section id="social" class="social">
         <div class="instagram-social">
             <a  target="_blank" href="http://instagram.com/"><img width="40px" height="40px" src="imagens/instagram.png">
             </a>
             <p>Nos siga no instagram para conferir mais fotos<br>
                 @exemplo_instagram</p>
         </div><!--instagram-social-->
-        <div class="mosaico-social">
-            <div style="background-image: url('imagens/mosaico1.jpeg');" class="img-mosaico-social"></div>
-            <div style="background-image: url('imagens/mosaico1.jpeg');" class="img-mosaico-social"></div>
-            <div style="background-image: url('imagens/mosaico1.jpeg');" class="img-mosaico-social"></div>
-            <div style="background-image: url('imagens/mosaico1.jpeg');" class="img-mosaico-social"></div>
-            <div style="background-image: url('imagens/mosaico1.jpeg');" class="img-mosaico-social"></div>
-            <div style="background-image: url('imagens/mosaico1.jpeg');" class="img-mosaico-social"></div>
-            <div style="background-image: url('imagens/mosaico1.jpeg');" class="img-mosaico-social"></div>
-            <div style="background-image: url('imagens/mosaico1.jpeg');" class="img-mosaico-social"></div>
-            <div style="background-image: url('imagens/mosaico1.jpeg');" class="img-mosaico-social"></div>
-        </div><!--mosaico-social-->
+
+
+        <div class="container-mosaico-social">
+            <div class="mosaico-social">
+                <div style="background-image: url('imagens/mosaico1.jpeg');background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;" class="img-mosaico-social"></div>
+                <div style="background-image: url('imagens/mosaico2.jpg');background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;" class="img-mosaico-social"></div>
+                <div style="background-image: url('imagens/mosaico3.jpg');background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;" class="img-mosaico-social"></div>
+                <div style="background-image: url('imagens/mosaico4.jpg');background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;" class="img-mosaico-social"></div>
+                <div style="background-image: url('imagens/mosaico5.jpg');background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;" class="img-mosaico-social"></div>
+                <div style="background-image: url('imagens/mosaico6.jpg');background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;" class="img-mosaico-social"></div>
+                <div style="background-image: url('imagens/mosaico7.jpg');background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;" class="img-mosaico-social"></div>
+                <div style="background-image: url('imagens/mosaico8.jpg');background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;" class="img-mosaico-social"></div>
+                <div style="background-image: url('imagens/mosaico9.jpeg');background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;" class="img-mosaico-social"></div>
+            </div><!--mosaico-social-->
+        </div>
+       
         <div class="facebook-social">
             <a  target="_blank" href="http://fb.com/"><img width="40px" height="40px" src="imagens/facebook.png">
             </a>
             <p>Confira também nosso Facebook!<br>
                 @exemplo_facebook</p>
         </div><!--facebook-social-->
-        <div class="clear"></div>
+      <div class="clear"></div>
     </section><!--section-social-->
 
-    <section class="contato">
+    <section id="contato" class="contato">
         <h2>Contato</h2>
         <form>
             <div class="form-wraper w100">

@@ -49,7 +49,7 @@ header nav.mobile-menu ul{
     text-align: center;
     width: 100%;
     left: 0;
-    top: 50px;
+    top: 80px;
     background-color: #ffffff;
     z-index: 999;
 }
@@ -57,6 +57,7 @@ header nav.mobile-menu ul{
 header nav.mobile-menu ul li{
     padding: 10px 0;
     text-transform: uppercase;
+    border-bottom: 1px solid #51585a;
 }
 
 header nav.mobile-menu ul li a{
@@ -319,25 +320,62 @@ section.section-videos h2{
 /***FIM SECTION-VIDEOS***/
 
 /***SECTION-TRATAMENTOS***/
+
+/***Slick***/
+
+.slick-dotted ul{
+    list-style-type: none;
+    text-align: center;
+    position: relative;
+    margin-top: 50px;
+}
+.slick-dotted li{
+    display: inline-block;
+    margin: 0 7px;
+}
+
+.slick-dotted button:focus{
+    outline: 0;
+}
+.slick-dotted li  button{
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    color: #d8d8d8;
+    border-width: 0;
+    background: #d8d8d8;
+    opacity: 1;
+    cursor: pointer;
+}
+li.slick-active button{
+    background: #688293;
+    color: #688293;
+}
+
+.slick-slide:focus{outline:none;}
+
+/***Slick***/
+
 section.tratamentos{
     background-color: #e7e7e7;
     padding: 40px 0;
 }
 section.tratamentos .tratamento-container .tratamento-single{
     float: left;
-    width: 33.3%;
+    width: calc(33.3% * 3);
     text-align: center;
 }
 
 .tratamentos .container{
-    padding: 30px 0;
+    padding: 60px 2%;
 }
 
 .tratamento-single{
-    padding: 40px;
+    padding-top: 35px;
 }
 
 .tratamento-single h3{
+    padding-bottom: 10px;
     font-size: 18px;
     color: #737373;
 }
@@ -345,12 +383,13 @@ section.tratamentos .tratamento-container .tratamento-single{
 .tratamento-single p{
     font-size: 14px;
     color: #737373;
+    margin-bottom: 20px;
 }
 section.tratamentos > h2{
     text-align: center;
     font-size: 20px;
     color: #737373;
-    padding: 20px 0;
+    
 }
 /***FIM SECTION-TRATAMENTOS***/
 
@@ -384,6 +423,7 @@ section.depoimentos .nome-depoimento{
 }
 
 .nome-depoimento img{
+    display: inline-block;
     border-radius: 20px;
 }
 
@@ -399,6 +439,9 @@ section.depoimentos .nome-depoimento{
 /***FIM SECTION-DEPOIMENTOS***/
 
 /***SECTION-SOCIAL***/
+.social{
+    background-color: #688293;
+}
 .instagram-social{
     float: left;
     width: 100%;
@@ -413,22 +456,83 @@ section.depoimentos .nome-depoimento{
     line-height: 34px;
     font-size: 15px;
 }
-
+.container-mosaico-social{
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
 .mosaico-social{
     float: left;
     width: 100%;
+    padding-bottom: 45px;
 }
 
-.img-mosaico-social{
-    float: left;
-    width: calc(100% / 9);
-    padding-top: calc(100% / 9);
-    background-color: #232627;
+.img-mosaico-social{  
+  
+    width: calc(100% / 6);
+    padding-top: calc(33.3% * 3);
     border: 5px solid white;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+ }
+
+/******************/
+
+.slick-prev{
+    width: 50px;
+    height: 50px;
+    background: #ffffff; 
+    font-size: 0;
+    border: 0;
+    outline: 0;
+    border-radius: 25px;
+    position: relative;
+    left: -25px;
+    top: 130px;
+    z-index: 2;
+    cursor: pointer;
 }
+.slick-prev::after{
+   content: url(../imagens/left-chevron.png);
+   position: relative;
+   left: -3px;
+
+   
+}
+.slick-next{
+    width: 50px;
+    height: 50px;
+    background: #ffffff; 
+    font-size: 0;
+    border: 0;
+    outline: 0;
+    border-radius: 25px;
+    right: -25px;
+    top: 130px;
+    position: absolute;
+}
+
+.slick-next::after{
+    content: url(../imagens/right-chevron.png);
+   position: relative;
+   right: -3px;
+}
+
+@media screen and (max-width:1469px){
+    .slick-next{
+        display: none;
+    }
+    .slick-next::after{
+        display: none;
+    }
+    .slick-prev{
+        display: none;
+    }
+    .slick-prev::after{
+        display: none;
+    }
+}
+
+/******************/
+
 
 .facebook-social{
     float: left;
@@ -445,7 +549,7 @@ section.depoimentos .nome-depoimento{
     font-size: 15px;
 }
 
-
+/*
 @media screen and (max-width: 1200px){
     .img-mosaico-social{
         width: calc(100% / 6);
@@ -465,6 +569,7 @@ section.depoimentos .nome-depoimento{
         display: none;
     }
 }
+*/
 /***FIM SECTION-SOCIAL***/
 
 /***SECTION-CONTATO***/
