@@ -520,13 +520,15 @@ section.depoimentos .nome-depoimento{
 
 @media screen and (max-width:1469px){
     .slick-next{
-        display: none;
+        width: 0;
+        height: 0;
     }
     .slick-next::after{
         display: none;
     }
     .slick-prev{
-        display: none;
+        width: 0;
+        height: 0;
     }
     .slick-prev::after{
         display: none;
