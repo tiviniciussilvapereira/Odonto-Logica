@@ -371,9 +371,11 @@ section.tratamentos .tratamento-container .tratamento-single{
 }
 
 .tratamento-single{
-    padding-top: 35px;
+    padding: 40px;
 }
-
+.tratamento-single img{
+    margin: 0 auto;
+}
 .tratamento-single h3{
     padding-bottom: 10px;
     font-size: 18px;

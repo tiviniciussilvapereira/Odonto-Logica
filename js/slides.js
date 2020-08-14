@@ -1,3 +1,4 @@
+//Implementando o plugin  Slick para fazer o carousel de imagens via js. 
 $(function(){
     $('.section-mosaico .container .wraper-mosaico').slick({
         centerMode: false, 
